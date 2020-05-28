@@ -46,3 +46,9 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+
+
+/*El tiny tweaks quiere decir pequeños ajustes. Puedes darlo a 
+elementos como un h1 concreto, una imagen,...
+No cambia el diseño global entre devices, solo pequeños ajustes.*/

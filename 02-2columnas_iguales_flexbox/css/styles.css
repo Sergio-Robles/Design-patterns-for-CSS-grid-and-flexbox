@@ -23,7 +23,7 @@ h1 {
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 900px;
     width: 95%;
     margin: 0 auto;
 }
@@ -37,3 +37,25 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+@media (min-width:480px) {
+    .dos-columnas {
+        display: flex;
+        justify-content: space-between;
+    }
+    .entrada-blog {
+        flex-basis: calc(50% - 5rem);
+    }
+}
+
+/*Los pasos para hacer esto son:
+1.- crear la clase en el html div y en el hijo
+2- crear el @media query en el css con el width que queramos segun dispositivo
+3.-aplicar la clase padre dentro del media query
+4.- coocar el display: flex y el justify-content: space between
+5.- aplicar el flex-basis en la clase hijo para la separacion, que es
+el calculo de la division al 50% del espacio menos la separacion de 5rem entre ellas*/
+
+/*Si quisieramos agregar mas columnas pero conservar el ancho, habra que poner en 
+.dos-columnas flex-wrap: wrap, ya que por defecto ignorara el justify-content
+y las pondra todas juntas*/

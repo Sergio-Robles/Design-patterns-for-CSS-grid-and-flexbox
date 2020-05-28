@@ -31,12 +31,6 @@ p {
     font-size: 2rem;
 }
 
-.contenedor {
-    max-width: 1200px;
-    width: 95%;
-    margin: 0 auto;
-}
-
 .entrada-blog a {
     display: inline-block;
     background-color: #2196F3;
@@ -46,3 +40,19 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+.contenedor {
+    max-width: 900px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width:480px) {
+    .contenedor {
+        width: 80%;
+    }
+}
+
+/*Mostly fluid quiere decir que se sigue manteniendo el principio
+de que el contenido fluye pero cambiamos la configuracion a 
+determinados aspectos, como en el ancho aqui.
+Si se le da el ancho en pixeles y no e porcentaje no funciona.*/

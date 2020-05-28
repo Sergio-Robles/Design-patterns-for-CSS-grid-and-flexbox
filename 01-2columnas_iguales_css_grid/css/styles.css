@@ -23,7 +23,7 @@ h1 {
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 900px;
     width: 95%;
     margin: 0 auto;
 }
@@ -37,3 +37,21 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
 }
+@media (min-width: 600px) {
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+/*display grid solo afectara al primer nivel de hijos*/
+/*Los pasos para hacer esto son:
+1.- crear la clase en el html div
+2- crear el @media query en el css con el width que queramos segun dispositivo
+3.-aplicar la clase dentro del media query
+4.- aplicar el display, el template para el numero de columnas y
+el gap para la separacion entre ellas.*/
+
+/*Si quisieramos agregar mas columnas, el display:grid respetara el 
+ancho que le hemos dado y las dispondra debajo. Esto no lo hace
+flex-box*/
